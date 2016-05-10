@@ -17,14 +17,14 @@ public class MainActivityTest extends
 
     @Override
     protected void setUp() throws Exception {
-        super.setUp();
+//        super.setUp();
 
         // Starts the activity under test using
         // the default Intent with:
         // action = {@link Intent#ACTION_MAIN}
         // flags = {@link Intent#FLAG_ACTIVITY_NEW_TASK}
         // All other fields are null or empty.
-        mTestActivity = getActivity();
+      //  mTestActivity = getActivity();
 
     }
 
