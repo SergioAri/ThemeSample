@@ -1,6 +1,10 @@
 apply plugin: 'com.android.application'
 apply plugin: 'jacoco-android'
 
+jacoco {
+    toolVersion = "0.7.1.201405082137"
+}
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -14,6 +18,7 @@ android {
     }
     buildTypes {
         debug {
+
             testCoverageEnabled = true
         }
         release {
