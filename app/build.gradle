@@ -8,6 +8,9 @@ jacoco {
     toolVersion = "0.7.1.201405082137"
 }
 
+task myJavadocs(type: Javadoc) {
+    source = 'app/java'
+}
 
 android {
     compileSdkVersion 23
