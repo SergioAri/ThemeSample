@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'jacoco-android'
 apply plugin: 'checkstyle'
 apply plugin: 'pmd'
-apply plugin: 'de.aaschmid.cpd'
+apply plugin: 'cpd'
 
 jacoco {
     toolVersion = "0.7.1.201405082137"
