@@ -5,9 +5,20 @@ jacoco {
     toolVersion = "0.7.1.201405082137"
 }
 
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
+
+    lintOptions {
+        // set to true to turn off analysis progress reporting by lint
+        quiet false
+        // if true, stop the gradle build if errors are found
+        abortOnError false
+        // if true, only report errors
+        ignoreWarnings true
+    }
+
 
     defaultConfig {
         applicationId "com.example.iw.themesample"
