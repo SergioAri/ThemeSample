@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 apply plugin: 'jacoco-android'
 apply plugin: 'checkstyle'
 apply plugin: 'pmd'
-apply plugin: 'cpd'
 
 jacoco {
     toolVersion = "0.7.1.201405082137"
@@ -42,6 +41,21 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+}
+
+
+task pmd (type: Pmd, dependsOn: assembleDebug) {
+
+    description 'Run pmd'
+    group 'verification'
+
+    ruleSets = ["basic", "braces", "strings", "design", "unusedcode"]
+    source = fileTree('app/java')
+
+    reports {
+        xml.enabled = false
+        html.enabled = true
     }
 }
 
