@@ -13,7 +13,7 @@ task myJavadocs(type: Javadoc) {
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    buildToolsVersion "23.0.0"
 
     lintOptions {
         // set to true to turn off analysis progress reporting by lint
